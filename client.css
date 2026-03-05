@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+/* ── Root ─────────────────────────────────────────────────── */
+.root {
+    -fx-font-family: "Noto Sans", "Segoe UI", sans-serif;
+    -fx-background-color: #313338;
+    -fx-font-size: 15px;
+}
+
+.label {
+    -fx-font-family: "Noto Sans", "Segoe UI", sans-serif;
+    -fx-text-fill: #dbdee1;
+    -fx-font-size: 15px;
+}
+
+.title {
+    -fx-font-family: "Noto Sans", "Segoe UI", sans-serif;
+    -fx-text-fill: #f2f3f5;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+/* ── Panels ──────────────────────────────────────────────── */
+.server-rail {
+    -fx-background-color: #1e1f22;
+    -fx-padding: 12 8 12 8;
+    -fx-pref-width: 72px;
+    -fx-min-width: 72px;
+    -fx-max-width: 72px;
+    -fx-spacing: 8;
+    -fx-alignment: top-center;
+}
+
+.channel-sidebar {
+    -fx-background-color: #2b2d31;
+    -fx-pref-width: 240px;
+    -fx-min-width: 240px;
+    -fx-max-width: 240px;
+}
+
+.server-name-header {
+    -fx-background-color: #2b2d31;
+    -fx-padding: 0 16 0 16;
+    -fx-border-color: transparent transparent #1e1f22 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-min-height: 48px;
+    -fx-pref-height: 48px;
+}
+
+.server-name-label {
+    -fx-font-weight: 700;
+    -fx-font-size: 15px;
+    -fx-text-fill: #f2f3f5;
+}
+
+.category-label {
+    -fx-text-fill: #949ba4;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-padding: 16 8 4 8;
+}
+
+.channel-item {
+    -fx-background-color: transparent;
+    -fx-padding: 6 8 6 8;
+    -fx-cursor: hand;
+    -fx-background-radius: 4;
+}
+
+.channel-item:hover {
+    -fx-background-color: rgba(255,255,255,0.06);
+}
+
+.channel-item-active {
+    -fx-background-color: rgba(255,255,255,0.10);
+}
+
+.channel-label {
+    -fx-text-fill: #949ba4;
+    -fx-font-size: 15px;
+}
+
+.channel-label-active {
+    -fx-text-fill: #f2f3f5;
+    -fx-font-weight: 600;
+}
+
+.hash-label {
+    -fx-text-fill: #80848e;
+    -fx-font-size: 18px;
+    -fx-font-weight: 400;
+    -fx-padding: 0 4 0 0;
+}
+
+.hash-label-active {
+    -fx-text-fill: #b5bac1;
+}
+
+/* ── Server icon buttons ─────────────────────────────────── */
+.server-icon {
+    -fx-background-color: #313338;
+    -fx-text-fill: #dbdee1;
+    -fx-font-weight: 700;
+    -fx-font-size: 14px;
+    -fx-min-width: 48px;
+    -fx-pref-width: 48px;
+    -fx-max-width: 48px;
+    -fx-min-height: 48px;
+    -fx-pref-height: 48px;
+    -fx-max-height: 48px;
+    -fx-background-radius: 50%;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.server-icon:hover {
+    -fx-background-color: #5865f2;
+    -fx-background-radius: 16px;
+    -fx-text-fill: white;
+}
+
+.server-icon-active {
+    -fx-background-color: #5865f2;
+    -fx-background-radius: 16px;
+    -fx-text-fill: white;
+}
+
+/* ── Channel header ──────────────────────────────────────── */
+.channel-header {
+    -fx-background-color: #313338;
+    -fx-border-color: transparent transparent #1e1f22 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0 16 0 16;
+    -fx-min-height: 48px;
+    -fx-pref-height: 48px;
+}
+
+/* ── Chat area ───────────────────────────────────────────── */
+.chat-bg {
+    -fx-background-color: #313338;
+}
+
+.text-area {
+    -fx-background-color: #313338;
+    -fx-text-fill: #dbdee1;
+    -fx-font-family: "Noto Sans", "Segoe UI", sans-serif;
+    -fx-font-size: 15px;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+    -fx-padding: 8 16 8 16;
+    -fx-highlight-fill: rgba(88,101,242,0.30);
+}
+
+.text-area .content {
+    -fx-background-color: #313338;
+    -fx-background-radius: 0;
+}
+
+.text-area:focused {
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+
+.text-area .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+.text-area .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(0,0,0,0.35);
+    -fx-background-radius: 4;
+}
+.text-area .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(0,0,0,0.55);
+}
+.text-area .scroll-bar:vertical .track,
+.text-area .scroll-bar:vertical .track-background,
+.text-area .scroll-bar:vertical .increment-button,
+.text-area .scroll-bar:vertical .decrement-button,
+.text-area .scroll-bar:vertical .increment-arrow,
+.text-area .scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+    -fx-pref-height: 0;
+}
+
+/* ── Composer / message input ────────────────────────────── */
+.composer-wrap {
+    -fx-background-color: #313338;
+    -fx-padding: 0 16 24 16;
+}
+
+.composer-inner {
+    -fx-background-color: #383a40;
+    -fx-background-radius: 8;
+    -fx-padding: 0 8 0 0;
+}
+
+.text-field, .input {
+    -fx-background-color: #383a40;
+    -fx-text-fill: #dbdee1;
+    -fx-prompt-text-fill: #87898c;
+    -fx-font-family: "Noto Sans", "Segoe UI", sans-serif;
+    -fx-font-size: 15px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 0;
+    -fx-padding: 11 8 11 16;
+    -fx-highlight-fill: rgba(88,101,242,0.30);
+}
+
+.text-field:focused, .input:focused {
+    -fx-border-width: 0;
+    -fx-background-color: #383a40;
+    -fx-effect: null;
+}
+
+.text-field:disabled {
+    -fx-opacity: 0.4;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.primary-button {
+    -fx-background-color: #5865f2;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-font-family: "Noto Sans", "Segoe UI", sans-serif;
+    -fx-background-radius: 3;
+    -fx-border-width: 0;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+.primary-button:hover { -fx-background-color: #4752c4; }
+.primary-button:pressed { -fx-background-color: #3c45a5; }
+.primary-button:disabled { -fx-opacity: 0.40; }
+
+.send-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b5bac1;
+    -fx-font-size: 18px;
+    -fx-padding: 6 10;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-background-radius: 4;
+}
+.send-button:hover {
+    -fx-text-fill: #dbdee1;
+    -fx-background-color: rgba(255,255,255,0.06);
+}
+.send-button:disabled { -fx-opacity: 0.40; }
+
+/* ── bottom of sidebar ─────────────────────── */
+.user-panel {
+    -fx-background-color: #232428;
+    -fx-padding: 8;
+    -fx-min-height: 52px;
+    -fx-pref-height: 52px;
+}
+
+.user-avatar {
+    -fx-background-color: #5865f2;
+    -fx-background-radius: 50%;
+    -fx-min-width: 32px;
+    -fx-pref-width: 32px;
+    -fx-max-width: 32px;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+
+.user-name-label {
+    -fx-text-fill: #f2f3f5;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+
+.user-status-label {
+    -fx-text-fill: #87898c;
+    -fx-font-size: 11px;
+}
+
+/* ── Mode warning ────────────────────────────────────────── */
+.mode-label {
+    -fx-text-fill: #f0b132;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 4 12;
+    -fx-background-color: rgba(240,177,50,0.10);
+    -fx-background-radius: 4;
+}
+
+/* ── Divider line in rail ────────────────────────────────── */
+.rail-divider {
+    -fx-background-color: #3f4147;
+    -fx-pref-height: 2;
+    -fx-pref-width: 32;
+    -fx-max-width: 32;
+    -fx-background-radius: 1;
+}
+
+/* ── Connect section in sidebar ─────────────────────────── */
+.connect-section {
+    -fx-background-color: #2b2d31;
+    -fx-border-color: #1e1f22 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 12;
+}
+
+.muted {
+    -fx-text-fill: #87898c;
+    -fx-font-size: 11px;
+}
